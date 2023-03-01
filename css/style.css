@@ -6,7 +6,7 @@ GUIA DE COLORES: FUCSIA rgb(226, 27, 156)  ROSA CLARO rgb(251, 215, 221)
 *{
     margin: 0;
     padding: 0;
-    box-sizing: boarder box;
+    box-sizing: boarder-box;
 }
 
 .header{
@@ -34,7 +34,7 @@ GUIA DE COLORES: FUCSIA rgb(226, 27, 156)  ROSA CLARO rgb(251, 215, 221)
     list-style: none;
     top: 0;
     padding: 10px;
-    left: 92%;
+    left: 90%;
     gap: 10px;
 }
 
@@ -46,20 +46,18 @@ GUIA DE COLORES: FUCSIA rgb(226, 27, 156)  ROSA CLARO rgb(251, 215, 221)
     background-color: rgb(226, 27, 156);
     width: 100%;
     background-size: cover;
-    background-repeat: no-repeat;
-    padding-left: 20px;
-    gap: 10px;
     display: flex;
 }
 
 .navbar li{
     list-style: none;
-    margin: 2px;
     padding: 10px;
+    margin-left: 20px;
+    gap: 10px;
     width: 100%;
     display: flex;
     flex-flow: column nowrap;
-    justify-content: space-evenly;
+    justify-content: space-between;
 }
 
 .navbar li a{
@@ -82,7 +80,7 @@ GUIA DE COLORES: FUCSIA rgb(226, 27, 156)  ROSA CLARO rgb(251, 215, 221)
 
 .video-inicio{
     background-position: 50% 50%;
-    width: 80%;
+    max-width: 80%;
     padding: 30px;
     padding-top: 0px;
 }
@@ -113,14 +111,57 @@ GUIA DE COLORES: FUCSIA rgb(226, 27, 156)  ROSA CLARO rgb(251, 215, 221)
     background-position: 50% 50%;
 }
 
-.grid-tendederos{
+.introduccion-tendederos{
     background-color: rgb(251, 215, 221);
-    display: grid;
-    width: 100%;
-    height: 100vh;
-    grid-template-columns: repeat(4,1fr);
-    grid-template-rows: repeat(2,1fr);
+    text-align: center;
 }
+
+.seccion-tendederos{
+    background-color: rgb(251, 215, 221);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    gap: 20px;
+    align-items: center;
+    padding: 20px 20px 50px 20px;
+}
+
+.card-tendedero{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.card-tendedero img{
+    width: 150px;
+    padding: 10px;
+    border-radius: 50%;
+}
+
+.card-tendedero p{
+    font-family: 'Roboto Condensed', sans-serif;
+    color: rgb(226, 27, 156);
+    font-weight: 100;
+    font-size: 18px;
+    text-align: center;
+}
+
+
+/* FORMADO TENDEDEROS CON GRID
+display: grid;
+width: 100%;
+height: 100vh;
+grid-template-columns: repeat(4,1fr);
+grid-template-rows: repeat(2,1fr);
+
+FORMADO NOTICIAS CON GRID
+display: grid;
+width: 100%;
+height: 100vh;
+grid-template-columns: repeat(3,1fr);
+grid-template-rows: repeat(2,1fr);
+padding: 30px; */
 
 .seccion-noticias{
     background-color: rgb(251, 215, 221);
@@ -131,14 +172,6 @@ GUIA DE COLORES: FUCSIA rgb(226, 27, 156)  ROSA CLARO rgb(251, 215, 221)
     align-items: center;
     padding: 20px;
 }
-
-/* FORMADO NOTICIAS CON GRID
-display: grid;
-width: 100%;
-height: 100vh;
-grid-template-columns: repeat(3,1fr);
-grid-template-rows: repeat(2,1fr);
-padding: 30px; */
 
 .noticias{
     background-color: white;
